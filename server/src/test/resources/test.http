@@ -1,0 +1,52 @@
+
+POST http://{{host}}:8080/{{base}}/api/orders
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Cache-Control: no-cache
+Connection: keep-alive
+Cookie: Idea-7dc981aa=0357570d-b1ad-42d7-86e6-ff92ec29d89c
+DNT: 1
+Origin: http://localhost:8080
+Pragma: no-cache
+Referer: http://localhost:8080/VarshaBookstoreFinal/client
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
+sec-ch-ua: "Google Chrome";v="119", "Chromium";v="119", "Not?A_Brand";v="24"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Content-Type: application/json
+
+{
+  "cart": {
+    "itemArray": [
+      {
+        "book": {
+         "bookId": 1002,
+          "title": "Stillhouse Lake",
+          "author": "Rachel Caine",
+          "description": "",
+          "price": 12,
+          "rating": 0,
+          "isPublic": true,
+          "isFeatured": false,
+          "categoryId": 1001
+        },
+        "quantity": 1,
+        "id": 1002
+      }
+    ]
+  },
+
+  "customerForm": {
+    "name": "Steve",
+    "address": "dfdfsdfd",
+    "phone": "3232333333",
+    "email": "stevstev@email.co.co",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 12,
+    "ccExpiryYear": 2024
+  }
+}
+###
